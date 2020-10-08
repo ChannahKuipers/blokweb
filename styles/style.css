@@ -1,5 +1,301 @@
-/* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
+  margin: 0;
+  padding:0;  
+}
+
+/* FONTS///////////////// */
+@font-face {
+  src: url(../fonts/Typewriter-Serial-Regular.ttf);
+  font-family: 'Serial';
+}
+
+body {
+  font-family: "Gill Sans",sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white;
+}
+h1 {
+  padding: 0.5em;
+  background: white;
+  margin: 1em;
+  font-family: Serial, sans-serif; 
+}
+
+/* HEADER///////////// */
+header section {
+  background: white;
+  display: flex;
+  border-bottom: black 1px solid;
+}
+img:nth-child(1) {
+  width: 16vw;
+  display: block;
+  margin: 0.5em;
+  margin-left: 1em;
+}
+form label input{
+  background: white;
+  margin: 1.5em;
+  margin-left: 2em;
+  width: 65vw;
+  height: 6vw;
+  border: black;
+  border-width: 0.1em;
+  border-style: solid;
+  padding-left: 1em;
+}
+
+  /*text-decoration: none;
+  border-radius: 1em;
+  transition: background 250ms ease;*/
+}
+/*a:hover {
+  background: white;
+  transform: scale(2);
+}
+*/
+
+/* NAVIGATION//////// */
+nav {
+}
+
+nav ul {
+  display: flex;
+  background: white;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: -20px;
+}
+nav li {
+  color: #151210;
+  padding: 0.em;
+  margin: 0.5em;
+  font-weight: 300;
+  background-color: white;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+  padding-bottom: -20px;
+}
+nav li a {
+  background: white;
+  text-decoration: none;
+  color: #151210;
+  font-size: 62.5%;
+}
+li img {
+  display: block;
+  padding-left: 15px;
+  padding-right: auto;
+  padding-bottom: -20px;
+  max-width: 50%;
+  text-align: center;
+  background-color: white;
+
+}
+
+/* nav ul li:nth-child(1) {
+  color: red;
+}
+nav ul li:last-child {
+  color: black;
+} */
+
+/* MAIN */
+main section {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 350;
+  padding: 0.5em;
+}
+img:nth-child(2) {
+  background-repeat: no-repeat;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+/* BUTTONS */
+main section:nth-child(3) {
+  background-color:white;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  grid-gap: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-bottom: black 1px solid;
+}
+button {
+  background-color:white;
+  width: 100%;
+  height: 19.3vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 0.2em;
+}
+button:nth-child(1) {
+  background-image: url("../images/gerecycled_glas.jpg");
+}
+button:nth-child(2){
+  background-image: url("../images/verzorgen_en_ontspannen.jpg");
+}
+button:nth-child(3){
+  background-image: url("../images/opbergen_bewaren.jpg");
+}
+button:nth-child(4){
+  background-image: url("../images/groene_schoonmaak.jpg");
+}
+
+/* ONZE FAVORIETEN */
+section:nth-child(5) {
+  background-color: white;
+  text-align: left;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  
+  
+}
+h2 {
+  color: black;
+  background-color: white;
+  font-family: Serial, sans-serif; 
+  font-weight: 400;
+  padding-left: 1em;
+  padding-top: 1em;
+
+}
+article {
+  width: 100%;
+  height: 100%;
+  display:grid;
+  background-color: white;
+  grid-gap: 1em;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  object-fit: cover;
+  
+}
+article img {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  object-fit: cover;
+}
+/*article:nth-child(1) {
+} */
+
+article:nth-child(1) img {
+  width: 100%;
+  /*justify-content: center; */
+}
+article:nth-child(2) img {
+  width: 100%;
+}
+article:nth-child(3) img {
+  width: 100%;
+}
+article:nth-child(4) img {
+  width: 100%;
+  height: 90%
+}
+
+h3 {
+  color: black;
+  font-family: "Gill Sans",sans-serif;
+  font-weight: 300;
+  line-height: 15.6px;
+  font-size: 1em;
+  margin-left: 1em;
+  
+}
+main p {
+  color: black;
+  font-family: Serial, sans-serif; 
+  font-weight: 300;
+  line-height: 15.6px;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  border-bottom: black 1px solid;
+  padding-bottom: 0.5em;
+}
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+}
+footer h2 {
+  background-color: black;
+  color: white;
+}
+footer p {
+  padding: 20px;
+  font-weight: 280;
+}
+.tel {
+  font-family: Serial, sans-serif; 
+}
+.contact {
+  padding: 20px;
+  color: inherit;
+}
+/* footer links */
+footer nav {
+}
+.footerlinks {
+  background-color: black;
+  font-family: Serial, sans-serif; 
+  text-align: inherit;
+  display: inherit;
+  padding: 1em;
+}
+.footerlinks li {
+  background-color: black;
+  color: white;
+  border-bottom: white 0.5px solid;
+  padding-bottom: 0.25em;
+}
+figure {
+  background-color: black;
+  display: flex;
+}
+figure img {
+  width: 20%;
+  height: 40%;
+  background: black;
+}
+.disclamer {
+  font-size: 0.7em;
+  color: white;
+  text-decoration: inherit, none;
+  text-align: center;
+  line-height: 2em;
+}
+/* bron */
+.bron{
+  font-size: 0.9em;
+  background-color: white;
+  font-family: "Gill Sans",sans-serif;
+  text-align: center;
+  color: black;
+}
+footer a {
+  color: black;
 }
 
