@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Channah Kuipers">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kopie van de Dille&Kamille site">
+    <title>Dille Kamille</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--HEADER----------------------->
+    <header>
+        <div>
+            <img class="logo" alt="logo Dille&Kamille" src="images/dille-kamille.svg">
+            <form action="none">
+                <label>
+                    <input tabindex="1" type="text" name="zoeken" placeholder="Waar ben je naar op zoek?" size="50"
+                        maxlength="100">
+                    <button tabindex="2" class="zoeken type="submit"></button>
+                </label>
+            </form>
+        </div>
+
+        <nav>
+            <ul>
+                <li tabindex="3"><a href="index.html"><img src="./images/menu.svg">Menu</a></li>
+                <li tabindex="4"><a href="index.html"><img src="./images/webwinkel.svg">
+                        Webwinkel</a></li>
+                <li tabindex="5"><a href="index.html"><img src="./images/verlanglijst.svg">Mijn
+                        verlanglijst<span>0</span></a></li>
+                <li tabindex="6"><a href="index.html"><img src="./images/winkelmandje.svg">Winkelmandje</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN-------------------------->
+    <main>
+        <div class="call">
+            <p>Voor 23.59 besteld, dezelfde dag verzonden</p>
+        </div>
+
+        <nav class="path">
+            <ul>
+                <li tabindex="7"><a href="index.html">Home</a></li>
+                <li tabindex="8"><a href="index.html">Wonen</a></li>
+                <li tabindex="9"><a href="index.html">Tassen</a></li>
+                <li tabindex="10"><a href="index.html">Tas, Dille & Kamille, groente</a></li>
+            </ul>
+        </nav>
+
+        <h1>Tas, Dille & Kamille, groente</h1>
+
+        <figure class="product">
+            <img src="images/product.jpg" alt="Productafbeelding: canvas tas met illustraties van groentes">
+        </figure>
+
+        <div class="product_info">
+            <p class="prijs2">6,95</p>
+            <p>Niet op voorraad</p>
+        </div>
+
+        <div class="inschrijven">
+            <p>Stuur mij een e-mail als er weer voorraad is</p>
+            <form class="inschrijven" action="none">
+                <label>
+                    <input tabindex="11" type="text" name="sturen" placeholder="Type hier je e-mailadres" size="50"
+                        maxlength="100">
+                    <button tabindex="12" class="sturen" type="submit">Inschrijven</button>
+                </label>
+            </form>
+        </div>
+
+        <section class="waarom">
+            <h2>Waarom Dille & Kamille?</h2>
+            <ul>
+                <li>Voor 23:59 besteld, zelfde dag verzonden</li>
+                <li>Nu gratis verzending vanaf 35 euro</li>
+                <li>100 dagen dedenktijd</li>
+                <li>Kies zelf de afleverdatum</li>
+                <li>Gratis retoureren in de winkel</li>
+            </ul>
+        </section>
+
+        <div class="verlanglijst">
+            <a>Voeg toe aan verlanglijst</a>
+            <button tabindex="13" class="hartje" aria-label="Add to Favorites">&#x1F494;</button>
+        </div>
+
+        <section class="inspireren">
+            <h2>Laat je inspireren door andere kanten #dillekamille</h2>
+        </section>
+
+        <!--fotobladeren-->
+        <img src="images/foto01.jpg" alt="foto1" id='foto'>
+        <div id='fotobladeren'>
+            <button id='terug' tabindex="14"><</button>
+            <button id='verder' tabindex="15">></button>
+        </div>
+
+        <section class="gegevens">
+            <h2>Gegevens</h2>
+            <p>Handig: een stevige katoenen tas voor van alles! Gebruik de tas voor bijvoorbeeld boodschappen en zwem-
+                of sportspullen, of neem de tas mee tijdens een bezoekje aan de markt. Op deze draagtas vind je onze
+                favoriete groentes:een leuk cadeau voor de echte thuiskok.</p>
+            <ul>
+                <li>Van biologisch en fairtrade katoen: een duurzaam alternatief voor plastic tassen</li>
+                <li>Opvouwbaar tot een klein pakje en gemakkelijk mee te nemen</li>
+                <li>Afmeting (exclusief draaghengsels):48 x 10 x 40cm
+                </li>
+            </ul>
+        </section>
+
+        <section class="informatie">
+            <h2>Meer informatie</h2>
+            <p>Artikelnummer<span>0014526</span></p>
+        </section>
+
+        <div class="winkels">
+            <p>Of kom eens langs in één van onze winkels!</p>
+            <picture>
+                <img src="images/winkel.jpg" alt="Dille&Kamille winkel van de buitenkant ">
+            </picture>
+            <button class="winkels" tabindex="16">Bekijk al onze winkels</button>
+        </div>
+    </main>
+
+    <!--FOOTER------------------------->
+    <div class="strepen">
+    </div>
+
+    <footer>
+        <h2>Klantenservice</h2>
+        <p>Voor vragen, tips of hulp kun je met onze klantenservice bellen. Geopend van ma t/m vr van 10.00 tot 17.00 uur.</p>
+
+        <p class="tel"><img src="images/tel.png" alt="illustratie telefoon">020-2382160</p>
+
+        <a class="contact"  href="https://www.dille-kamille.nl" alt="illustratie envelop" tabindex="17"><img src="images/mail.png">klantenservice@dille-kamille.com</a>
+
+        <nav>
+            <ul class="footerlinks">
+                <li tabindex="18">Service</li>
+                <li tabindex="19">Over ons</li>
+                <li tabindex="20">Inspiratie</li>
+            </ul>
+        </nav>
+
+        <figure>
+            <a href="instragram.com" tabindex="21" alt="Instragram icoontje"><img src="images/instagram.svg"></a>
+            <a href="pinterest.com" tabindex="22" alt="Pinterest icoontje"><img src="images/pinterest.svg"></a>
+            <a href="facebook.com" tabindex="23" alt="Facebook icoontje"><img src="images/facebook.svg"></a>
+            <a href="linkedin.com" tabindex="24" alt="Linkedin icoontje"><img src="images/linkedin.svg"></a>
+        </figure>
+
+        <p class="disclamer">Alle prijzen zijn inclusief BTW en andere heffingen en exclusief eventuele verzendkosten en
+            overige kosten.</p>
+
+        <p class="bron">
+            Gemaakt door Channah Kuipers | Bron: <a href="https://www.dille-kamille.nl" tabindex="25">Dille Kamille</a>
+        </p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
+
+
+<!-- bronnen
+* afbeeldingen: dille-kamille.nl
+* socialmedia iconen: simpleicons.org en icons8.com
+-->

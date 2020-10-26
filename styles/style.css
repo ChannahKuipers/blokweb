@@ -1,13 +1,17 @@
 *, *::after, *::before {
   box-sizing:border-box;
   margin: 0;
-  padding:0;  
+  padding: 0;  
 }
 
 /* FONTS///////////////// */
 @font-face {
   src: url(../fonts/Typewriter-Serial-Regular.ttf);
   font-family: 'Serial';
+}
+@font-face {
+  src: url(../fonts/Typewriter-Serial-\ Light.ttf);
+  font-family: 'Seriallight';
 }
 
 body {
@@ -17,119 +21,148 @@ body {
   height: 100vh;
   background: white;
 }
-h1 {
-  padding: 0.5em;
-  background: white;
-  margin: 1em;
-  font-family: Serial, sans-serif; 
-}
 
-/* HEADER///////////// */
-header section {
+/* HEADER/////////////// */
+header {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+header div {
   background: white;
   display: flex;
   border-bottom: black 1px solid;
 }
+header img.logo {
+  width: inherit;
+  background-color:white;
+  width: 60%;
+  height: 14vw;
+}
 img:nth-child(1) {
-  width: 16vw;
+  width: 14vw;
   display: block;
   margin: 0.5em;
   margin-left: 1em;
+  background-color: none;
 }
 form label input{
   background: white;
   margin: 1.5em;
-  margin-left: 2em;
-  width: 65vw;
-  height: 6vw;
-  border: black;
+  margin-top: 1em;
+  width: 62vw;
+  height: 10vw;
+  border: rgb(194, 194, 194);
   border-width: 0.1em;
   border-style: solid;
   padding-left: 1em;
 }
-
-  /*text-decoration: none;
-  border-radius: 1em;
-  transition: background 250ms ease;*/
+form button.zoeken {
+  margin-left: -3.4em;
+  margin-top: 0.9em;
+  position: absolute;
+  float: right;
+  width: 10.5%;
+  height: 4.6%;
+  padding: 10px;
+  background-image: url("../images/zoekicoon.png");
+  color: white;
+  font-size: 17px;
+  border: none;
 }
-/*a:hover {
-  background: white;
-  transform: scale(2);
+form input {
+  color: rgb(194, 194, 194);
+  font-size: 0.8em;
+  font-weight: 200;
 }
-*/
 
-/* NAVIGATION//////// */
+/* NAVIGATION/////////// */
 nav {
+  border-bottom: black 1px solid;
 }
-
 nav ul {
   display: flex;
   background: white;
   justify-content: center;
   text-align: center;
-  padding-bottom: -20px;
 }
 nav li {
   color: #151210;
-  padding: 0.em;
+  padding: 0em;
   margin: 0.5em;
   font-weight: 300;
-  background-color: white;
+  background-color: none;
   list-style: none;
   text-decoration: none;
   list-style-type: none;
-  padding-bottom: -20px;
 }
 nav li a {
-  background: white;
+  background: none;
   text-decoration: none;
   color: #151210;
-  font-size: 62.5%;
+  font-size: 63%;
+}
+a:hover {
+  color: green;
 }
 li img {
   display: block;
-  padding-left: 15px;
+  height: 2em;
+  padding-left: 1em;
   padding-right: auto;
-  padding-bottom: -20px;
-  max-width: 50%;
+  max-width: 55%;
   text-align: center;
   background-color: white;
-
+}
+/* path */
+nav.path {
+  border-bottom: inherit;
+}
+nav.path ul {
+  padding-bottom: inherit;
+  background-color: none;
+}
+nav.path a {
+  color:#9e9e9e;
+  font-size: 0.75em;
+  text-decoration: underline;
 }
 
-/* nav ul li:nth-child(1) {
-  color: red;
-}
-nav ul li:last-child {
-  color: black;
-} */
-
-/* MAIN */
-main section {
-  background-color: black;
-  color: white;
+/* MAIN ///////////////////////////*/
+main div.call {
+  background-color:black;
   text-align: center;
   font-size: 0.8em;
   font-weight: 350;
-  padding: 0.5em;
+  padding-top: 0.5em;
+  height: inherit;
+  padding-bottom: 0.5em;
+  padding-top: 44%;
 }
+.call p {
+  color: white;
+  font: inherit;
+}
+/* Banner */
 img:nth-child(2) {
   background-repeat: no-repeat;
   display: block;
   max-width: 100%;
   width: 100%;
-  height: 100%;
-  padding: 20px;
+  height: auto;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
-
-/* BUTTONS */
-main section:nth-child(3) {
+/* Buttons */
+main div.product_buttons {
   background-color:white;
   display:grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 100%;
-  grid-gap: 1em;
+  grid-gap: 0.5em;
+  padding-top: 0.8em;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -138,26 +171,26 @@ main section:nth-child(3) {
 button {
   background-color:white;
   width: 100%;
-  height: 19.3vh;
+  height: 23vh;
   background-size: 100%;
   background-repeat: no-repeat;
   border: none;
   margin: 0.2em;
 }
 button:nth-child(1) {
-  background-image: url("../images/gerecycled_glas.jpg");
+  background-image: url("../images/thee.jpg");
 }
 button:nth-child(2){
   background-image: url("../images/verzorgen_en_ontspannen.jpg");
 }
 button:nth-child(3){
-  background-image: url("../images/opbergen_bewaren.jpg");
+  background-image: url("../images/woonaccessoires.jpg");
 }
 button:nth-child(4){
-  background-image: url("../images/groene_schoonmaak.jpg");
+  background-image: url("../images/geur_in_huis.jpg");
 }
 
-/* ONZE FAVORIETEN */
+/* Onze favorieten */
 section:nth-child(5) {
   background-color: white;
   text-align: left;
@@ -166,19 +199,18 @@ section:nth-child(5) {
   grid-template-rows: auto;
   width: 100%;
   height: 100%;
-  padding-right: 20px;
+  padding-right: 1em;
+  padding-left: 1em;
   padding-bottom: 20px;
-  
-  
+  z-index: 1;
 }
 h2 {
   color: black;
   background-color: white;
   font-family: Serial, sans-serif; 
-  font-weight: 400;
+  font-weight: 100;
   padding-left: 1em;
   padding-top: 1em;
-
 }
 article {
   width: 100%;
@@ -189,20 +221,14 @@ article {
   padding-right: 20px;
   padding-bottom: 20px;
   object-fit: cover;
-  
 }
 article img {
   width: 100%;
-  position: relative;
   height: 100%;
   object-fit: cover;
 }
-/*article:nth-child(1) {
-} */
-
 article:nth-child(1) img {
   width: 100%;
-  /*justify-content: center; */
 }
 article:nth-child(2) img {
   width: 100%;
@@ -212,31 +238,443 @@ article:nth-child(3) img {
 }
 article:nth-child(4) img {
   width: 100%;
-  height: 90%
+  height: 90%;
 }
-
 h3 {
   color: black;
   font-family: "Gill Sans",sans-serif;
   font-weight: 300;
-  line-height: 15.6px;
-  font-size: 1em;
+  line-height: 15px;
+  font-size: 0.77em;
   margin-left: 1em;
-  
+  background-color: white;
 }
-main p {
+main p.prijs {
   color: black;
   font-family: Serial, sans-serif; 
   font-weight: 300;
-  line-height: 15.6px;
-  font-size: 1.2em;
-  margin-bottom: 2em;
+  line-height: 15px;
+  font-size: 1em;
   margin-left: 1em;
   border-bottom: black 1px solid;
+  padding-bottom: 0.2em;
+}
+
+/* Veilig winkelen */
+h2.veilig {
+  padding-right: 1em;
   padding-bottom: 0.5em;
 }
-/* FOOTER */
+section:nth-child(6) {
+background-color: white;
+border: black 1px solid;
+padding-right: 2.5em;
+padding-left: 2.5em;
+margin: 2em;
+text-align: center;
+}
+p.begin {
+  padding-bottom: 0.8em;
+  font-family: 'Caveat', cursive;
+  font-size: 1.2em;
+}
+p.midden {
+  padding-bottom: 0.8em;
+  font-weight: 50;
+  line-height: 1.4em;
+  color: #151210;
+}
+button#lees_meer {
+  font-family: Serial, sans-serif;
+  background-color: white;
+  background-image: inherit;
+  height: 7vh;
+  width: 40vw;
+  font-size: 1em;
+  border: black 1px solid;
+  margin:0.3em;
+  margin-bottom: 2em;
+}
+
+/* Aanbevolen voor jou */
+section:nth-child(8) {
+  background-color: white;
+  text-align: left;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  height: 100%;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 20px;
+}
+h2 {
+  color: black;
+  background-color: white;
+  font-family: Serial, sans-serif; 
+  font-weight: 100;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+article {
+  width: 100%;
+  height: 100%;
+  display:grid;
+  background-color: white;
+  grid-gap: 1em;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  object-fit: cover;
+}
+article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+article:nth-child(1) img {
+  width: 100%;
+}
+article:nth-child(2) img {
+  width: 92%;
+}
+article:nth-child(3) img {
+  width: 100%;
+}
+article:nth-child(4) img {
+  width: 100%;
+}
+h3 {
+  color: black;
+  font-family: "Gill Sans",sans-serif;
+  font-weight: 300;
+  line-height: 15px;
+  font-size: 0.77em;
+  margin-left: 1em;
+  background-color: white;
+}
+main p.prijs {
+  color: black;
+  font-family: Serial, sans-serif; 
+  font-weight: 300;
+  line-height: 15px;
+  font-size: 1em;
+  margin-left: 1em;
+  border-bottom: black 1px solid;
+  padding-bottom: 0.2em;
+}
+
+/* Extra buttons */
+div.buttons {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: inherit;
+  margin-bottom: 1em;
+  background-color: none;
+}
+button#recepten {
+  background-image: url("../images/recepten.jpg");
+  height: 8em;
+}
+button#french_press {
+  background-image: url("../images/de_french_press.jpg");
+  height: 8em;
+}
+button#winkels {
+  background-image: url("../images/winkels.jpg");
+  height: 32em;
+  margin-bottom: 20px;
+}
+
+/* MAIN 2 /////////////////////////*/
+h1 {
+  background: none;
+  margin: 1em;
+  margin-top: 0em;
+  font-family: Serial, sans-serif; 
+  font-size: 1em;
+  font-weight: 100;
+  border-bottom: black 1px solid;
+  border-top: black 1px solid;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  text-align: center;
+}
+figure.product {
+  background-color: none;
+  background-image: inherit;
+  justify-content: inherit;
+}
+figure.product img {
+  width: 100%;
+  justify-content: center;
+  position: static;
+}
+div.product_info {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 2em;
+}
+p.prijs2 {
+  font-family: Serial, sans-serif; 
+  font-weight: 300;
+  line-height: 15px;
+  font-size: 1em;
+  margin-left: 1em;
+  padding-bottom: 0.2em;
+}
+div.inschrijven p {
+  padding: 1.5em;
+  font-size: 0.95em;
+  font-weight: 100;
+  padding-bottom: 0.3em;
+}
+form.inschrijven {
+  display: flex;
+  background-color: white;
+}
+form.inschrijven label input {
+  width: 50vw;
+  height: 7vh;
+  margin: inherit;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+form button.sturen {
+  background-image: inherit;
+  font-family: Serial, sans-serif;
+  font-size: 0.9em;
+  border: black 1px solid;
+  padding: inherit;
+  height: 7vh;
+  width: 8em;
+  box-shadow: 3px 3px 0px 0px rgb(168, 168, 168);
+}
+section.waarom {
+  border: black 1px solid;
+  margin: 1.5em;
+}
+section.waarom h2 {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Seriallight';
+}
+section.waarom ul {
+  padding-left: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 1.2em;
+  font-weight: 100;
+  font-size: 0.8em;
+  line-height: 2;
+}
+div.verlanglijst {
+  font-weight: 80;
+  text-align: center;
+  color:#3a3a3a;
+  text-decoration: none;
+  display: flex;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+a span { /* wishlist */
+  color: white;
+  float: right;
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1em;
+  padding: 0.3em;
+  font-size: 1em;
+  text-align: center;
+  margin-top: -2.5em;
+  margin-left: -2em;
+  background-color:green;
+  border-radius: 2em;
+}
+button.hartje {
+  background-image: inherit;
+  background-image: none;
+  background: none;
+  margin: inherit;
+  height: 1em;
+  width: auto;
+  font-size: 1.8em;
+  cursor: pointer;
+  padding-left: 0.3em;
+  position: static;
+  margin-top: -0.4em;
+}
+section.inspireren h2 {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: 'Seriallight';
+  padding: inherit;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+/* Fotobladeren */
+div#fotobladeren {
+  display: flex;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+img#foto {
+  width: 18em;
+  object-fit: cover;
+  height: 17em;
+  border: black 1px solid;
+  margin-left: 1em;
+}
+#fotobladeren button {
+text-align: center;
+justify-content: center;
+font-family: 'Caveat', cursive;
+font-size: 1.3em;
+text-transform: uppercase;
+background-color: white;
+text-align: inherit;
+border: black 1px solid;
+border-top: inherit;
+margin: 1em;
+}
+div button#verder {
+  background-image: inherit;
+  height: 1.5em;
+  width: 10em;
+  margin: inherit;
+  margin-top: -0.3em;
+}
+div button#terug {
+  background-image: inherit;
+  height: 1.5em;
+  width: 10em;
+  margin: inherit;
+  margin-top: -0.3em;
+  margin-bottom: 1em;
+} 
+
+/* Gegevens */
+section.gegevens h2 {
+  font-size: 1.1em;
+  font-family: 'Serial';
+  margin-left: 0.5em;
+  border-top: black 1px solid;
+}
+section.gegevens p {
+  padding: 1.5em;
+  padding-top: 1em;
+  font-size: 0.9em;
+  font-weight: 100;
+  padding-bottom: 0.3em;
+  color: rgb(83, 83, 83);
+  line-height: 1.3;
+  margin: 0.5em;
+}
+section.gegevens ul {
+  padding-left: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 1.2em;
+  font-weight: 100;
+  font-size: 0.9em;
+  border-bottom: black 1px solid;
+  margin-right: 1em;
+  color: rgb(83, 83, 83);
+  line-height: 1.3;
+  margin: 0.5em;
+}
+
+/* Informatie */
+section.informatie h2 {
+  font-size: 1.1em;
+  font-family: 'Serial';
+  margin-left: 0.5em;
+}
+section.informatie p {
+  padding: 1em;
+  padding-top: 1em;
+  font-size: 0.95em;
+  margin-left: 0.5em;
+}
+section.informatie span {
+  color:#3a3a3a;
+  font-weight: 100;
+  padding-left: 2em;
+}
+
+/* Onze winkels */
+div.winkels {
+  font-size: 1.1em;
+  font-family: 'Seriallight';
+  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 12em;
+  background-image: url("../images/pijl.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position: 8.5em 2.5em;
+  background-size: 30% auto;
+}
+div.winkels picture {
+  float: right;
+  z-index: 2;
+  margin: inherit;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+  padding-top: 2em;
+}
+div.winkels img {
+  transform: rotate(5deg);
+  object-fit: cover;
+  width: 14em;
+  height: 14em;
+  border: black 1px solid;
+  background-color: white;
+  padding: 0.5em;
+}
+div.winkels button.winkels {
+  position: absolute;
+  margin: inherit;
+  margin-top: 10em;
+  margin-left: 2.7em;
+  margin-right: 2.7em;
+  background-image: inherit;
+  background-image: none;
+  font-family: Serial, sans-serif;
+  font-size: 0.8em;
+  border: black 1px solid;
+  padding: inherit;
+  height: 5vh;
+  width: 15em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  box-shadow: 3px 3px 0px 0px rgb(168, 168, 168);
+}
+@keyframes draai-animation {
+  0% {transform:rotate(0);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+div.winkels picture img:hover {
+  animation-name: draai-animation;
+  animation-duration: 1s;
+}
+
+/* FOOTER ////////////////////////////////////*/
+div.strepen {
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.5em;
+}
 footer {
+  padding-top: 1em;
   background-color: black;
   color: white;
 }
@@ -248,15 +686,36 @@ footer p {
   padding: 20px;
   font-weight: 280;
 }
-.tel {
+p.tel {
+  padding: inherit;
   font-family: Serial, sans-serif; 
+  background-repeat: no-repeat;
+  margin-bottom: 2.2em;
+  margin-left:
+  text-decoration: underline;
 }
-.contact {
-  padding: 20px;
+p.tel img {
+  float: left;
+  height: auto;
+  width: 17%;
+  position: static;
+  margin-top: -1.2em;
+}
+a.contact {
   color: inherit;
+  padding: inherit;
 }
+a.contact img {
+  float: left;
+  height: auto;
+  width: 18%;
+  position: static;
+  margin-top:-1em;
+}
+
 /* footer links */
 footer nav {
+  padding-top: 1.2em;
 }
 .footerlinks {
   background-color: black;
@@ -272,12 +731,25 @@ footer nav {
   padding-bottom: 0.25em;
 }
 figure {
-  background-color: black;
+  padding-top: 1em;
+  background-image: url("../images/volg.png");
+  background-position: left;
+  background-position: 1em 0.2em;
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  background-color: none;
   display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2em;
+}
+figure a {
+  margin: -0.9em;
+  padding-right: 1em;
 }
 figure img {
-  width: 20%;
-  height: 40%;
+  float: right;
+  width: 30%;
+  height: 37%;
   background: black;
 }
 .disclamer {
@@ -285,8 +757,9 @@ figure img {
   color: white;
   text-decoration: inherit, none;
   text-align: center;
-  line-height: 2em;
+  line-height: 1.8em;
 }
+
 /* bron */
 .bron{
   font-size: 0.9em;
@@ -298,4 +771,3 @@ figure img {
 footer a {
   color: black;
 }
-

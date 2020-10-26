@@ -1,125 +1,189 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Channah Kuipers">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kopie van de Dille&Kamille site">
 	<title>Dille Kamille</title>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 	<link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<!--HEADER----------------------->
 	<header>
-		<section>
-			<img src="images/dille-kamille.svg">
+		<div>
+			<img class="logo" alt="logo Dille&Kamille" src="images/dille-kamille.svg">
 			<form action="none">
 				<label>
-					<input type="text" name="zoeken" size="50" maxlength="100">
+					<input tabindex="1" type="text" name="zoeken" placeholder="Waar ben je naar op zoek?" size="50"
+						maxlength="100">
+					<button tabindex="2" class="zoeken type="submit"></button>
 				</label>
 			</form>
-		</section>
+		</div>
 
 		<nav>
 			<ul>
-				<li><a href="index.html"><img src="./images/menu.svg">Menu</a></li>
-				<li><a href="index.html"><img src="./images/webwinkel.svg">
-					Webwinkel</a></li>
-				<li><a href="index.html"><img src="./images/verlanglijst.svg">Mijn verlanglijst</a></li>
-				<li><a href="index.html"><img src="./images/winkelmandje.svg">Winkelmandje</a></li>
+				<li tabindex="3"><a href="product.html"><img src="./images/menu.svg">Menu</a></li>
+				<li tabindex="4"><a href="product.html"><img src="./images/webwinkel.svg">
+						Webwinkel</a></li>
+				<li tabindex="5"><a href="product.html"><img src="./images/verlanglijst.svg">Mijn
+						verlanglijst<span>0</span></a></li>
+				<li tabindex="6"><a href="product.html"><img src="./images/winkelmandje.svg">Winkelmandje</a></li>
 			</ul>
 		</nav>
-	
 	</header>
 
 	<!--MAIN-------------------------->
 	<main>
-		<section class="call" >
+		<div class="call">
 			<p>Voor 23.59 besteld, dezelfde dag verzonden</p>
+		</div>
+
+		<img src="./images/banner2.jpg"
+			alt="Knusse herfst afbeelding: tafel met koekje en thee, en meisje die een boek open slaat. ">
+
+		<div class="product_buttons">
+			<button id="thee" tabindex="7">
+			</button>
+
+			<button id="verzorgen&ontspannen" tabindex="8">
+			</button>
+
+			<button id="woonaccessoires" tabindex="9">
+			</button>
+
+			<button id="geur_in_huis" tabindex="10">
+			</button>
+		</div>
+
+		<h2>Onze favorieten</h2>
+
+		<section>
+			<article tabindex="11">
+				<img src="images/fruitmelange.jpg" alt="Productafbeelding: fruitmelange in papiere zak">
+				<h3>Fruitmelange, appel, 70 gram</h3>
+				<p class="prijs">4,50</p>
+			</article>
+
+			<article tabindex="12">
+				<img src="images/frenchpress.jpg" alt="Productafbeelding: French press">
+				<h3>French press</h3>
+				<p class="prijs">24,95</p>
+			</article>
+
+			<article tabindex="13">
+				<img src="images/kussen.jpg" alt="Productafbeelding: bruine ronde kussen">
+				<h3>Kussen, velours, bruin, 40 cm</h3>
+				<p class="prijs">16,95</p>
+			</article>
+
+			<article tabindex="14">
+				<img src="images/kaneelpijpjes.jpg" alt="Productafbeelding: kaneelpijpes in plastic zak">
+				<h3>Kaneelpijpjes, 25 gram</h3>
+				<p class="prijs">2,95</p>
+			</article>
 		</section>
 
-		<img src="./images/banner.jpg">
-		
-	<section>
-		<button id="gerecycled_glas">
-		</button>
-		
-		<button id="verzorgen&ontspannen">
-		</button>
+		<section>
+			<h2 class="veilig">Veilig winkelen</h2>
+			<p class="begin">We doen ons best om het winkelen bij Dille & Kamille zo veilig mogelijk te maken.</p>
+			<p class="midden">Daarom hebben we extra maatregelen genomen, zoals onder andere het plaatsen van schermen
+				bij kassa's, de mogelijkheid om winkelmandjes te ontsmetten en het bepalen van een maximum aantal
+				klanten per winkel.</p>
+			<button id="lees_meer" tabindex="15">Lees meer ></button>
+		</section>
 
-		<button id="opbergen&bewaren">
-		</button>
+		<!--fotobladeren-->
+		<!-- <div id='fotobladeren'>
+		<button id='recepten'>Recepten</button>
+		<button id='keuken'>De Keuken</button>
+	</div>
+	<!--<div>
+		<button id='thuis'>Thuis</button></div> -->
 
-		<button id="groene_schoonmaak">
-		</button>
-	</section>
-	
-	<h2>Onze favorieten</h2>
-	
-	<section>
-		<article>
-			<img src="images/canvas_tas.jpg">
-			<h3>Tas Dille & Kamille, bio-katoen, groot</h3>
-			<p>3,95</p>
-		</article>
-		
-		<article>
-			<img src="images/vershoudschaal.jpg">
-			<h3>Vershoudschaal, glas en bamboe, 730 ml</h3>
-			<p>9,95</p>
-		</article>
+		<!--
+	<img src="images/foto01.jpg"
+	alt="foto1" id='foto'>
+	<!--<ul id='thumbnails'></ul> -->
 
-		<article>
-			<img src="images/bijenwasdoek.jpg">
-			<h3>Bijenwasdoek, biokatoen, 35 x 35 cm</h3>
-			<p>8,95</p>
-		</article>
+		<h2>Aanbevolen voor jou</h2>
+		<section>
+			<article tabindex="16">
+				<img src="images/tas_groente.jpg" alt="Productafbeelding: canvas tas met illustraties van groentes">
+				<h3>Tas, Dille & Kamille, groente</h3>
+				<p class="prijs">6,95</p>
+			</article>
 
-		<article>
-			<img src="images/compostemmer.jpg">
-			<h3>Compostemmer, zink</h3>
-			<p>14,95</p>
-		</article>
-		
-	</section>
-		
+			<article tabindex="17">
+				<img src="images/zeep.jpg"
+					alt="Productafbeelding: zeep blok met papiere omhulsel met illustratie van bloemen">
+				<h3>Zeep, dille & kamille, 150 gram</h3>
+				<p class="prijs">3,95</p>
+			</article>
+
+			<article tabindex="18">
+				<img src="images/kalender.jpg"
+					alt="Productafbeelding: groene kalender met illustraties van planten en tuingereedschap">
+				<h3>Moestuinkalender, Dille & Kamille</h3>
+				<p class="prijs">9,95</p>
+			</article>
+
+			<article tabindex="19">
+				<img src="images/pompoen.jpg" alt="Productafbeelding: Pompoen knuffel">
+				<h3>Groente pompoen, katoen, 3+</h3>
+				<p class="prijs">12,95</p>
+			</article>
+		</section>
+
+		<div class="buttons">
+			<button id="recepten" tabindex="20"></button>
+			<button id="french_press" tabindex="21"></button>
+			<button id="winkels" tabindex="22"></button>
+		</div>
+
 	</main>
-	
+
 	<!--FOOTER------------------------->
+	<div class="strepen">
+	</div>
+
 	<footer>
 		<h2>Klantenservice</h2>
 		<p>Voor vragen, tips of hulp kun je met onze klantenservice bellen. Geopend van ma t/m vr van 10.00 tot 17.00 uur.</p>
-		<p class="tel">020-2382160</p>
-		<a href="https://www.dille-kamille.nl" class="contact">klantenservice@dille-kamille.com</a>
+
+		<p class="tel"><img src="images/tel.png" alt="illustratie telefoon">020-2382160</p>
+
+		<a class="contact" href="https://www.dille-kamille.nl" tabindex="23"><img src="images/mail.png" alt="illustratie envelop">klantenservice@dille-kamille.com</a>
 
 		<nav>
 			<ul class="footerlinks">
-				<li>Service</li>
-				<li>Over ons</li>
-				<li>Inspiratie</li>
+				<li tabindex="24">Service</li>
+				<li tabindex="25">Over ons</li>
+				<li tabindex="26">Inspiratie</li>
 			</ul>
 		</nav>
 
-	<figure>
-		<a href="instragram.com"><img src="images/instagram.svg"></a>
-		<a href="pinterest.com"><img src="images/pinterest.svg"></a>
-		<a href="facebook.com"><img src="images/facebook.svg"></a>
-		<a href="linkedin.com"><img src="images/linkedin.svg"></a>
-	</figure>
-	
-	<p class="disclamer">Alle prijzen zijn inclusief BTW en andere heffingen en exclusief eventuele verzendkosten en overige kosten.</p>
+		<figure>
+			<a href="instragram.com" tabindex="27"><img src="images/instagram.svg" alt="Instragram icoontje"></a>
+			<a  href="pinterest.com" tabindex="28"><img src="images/pinterest.svg" alt="Pinterest icoontje"></a>
+			<a href="facebook.com" tabindex="29"><img src="images/facebook.svg" alt="Facebook icoontje"></a>
+			<a href="linkedin.com" tabindex="30"><img src="images/linkedin.svg" alt="Linkedin icoontje"></a>
+		</figure>
 
-		<p class="bron"> 
-		Gemaakt door Channah Kuipers | Bron: <a href="https://www.dille-kamille.nl">Dille Kamille</a>
+		<p class="disclamer">Alle prijzen zijn inclusief BTW en andere heffingen en exclusief eventuele verzendkosten en
+			overige kosten.</p>
+
+		<p class="bron">
+			Gemaakt door Channah Kuipers | Bron: <a href="https://www.dille-kamille.nl" tabindex="31">Dille Kamille</a>
 		</p>
-		
-		
 	</footer>
 
 	<script src="scripts/script.js"></script>
 </body>
-	
 
 </html>
 
